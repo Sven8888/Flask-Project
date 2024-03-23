@@ -3,21 +3,68 @@
 <head>
   <title>Web development</title>
   <style>
-    
+    /* CSS styles for h1 */
+    h1 {
+      font-size: 40px;
+      font-family: Roboto;
+      font-weight: normal;
+      color: rgb(80,80,80);
+      text-align: center;
+    }
+    /* CSS styles for banner image */
+    #banner {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+    }
+    /* CSS styles for h2 */
+    h2 {
+      font-family: Roboto;
+      font-size: 32px;
+      color: rgb(100,100,100);
+      text-align: center;
+      font-weight: normal;
+    }
+
+    /* CSS styles for paragraphs */
+    .bodytext {
+      font-family: Roboto;
+      font-size: 15px;
+      color: rgb(50,50,50);
+      text-align: justify;
+      font-weight: normal;
+    }
+
+    /* CSS styles for container */
+    #container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
   </style>
 
 </head>
 <body>
-  <img src="/static/images/tree.jpg" height="400">
-  <h1>Site Information</h1>
+  <!-- Main container for the content -->
+  <div id="container">
+    <!-- Title of the webpage -->
+    <h1>Site Information</h1>
+    <!-- Banner image -->
+    <img id="banner" src="/static/images/tree.jpg" height="400">
 
-  <h2>About this webpage</h2>
-  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    <!-- Section heading and content -->
+    <h2>About this webpage</h2>
+    <p class="bodytext">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     </p>
-  <h2>Other content</h2>
-  <p>
-    "Show content here"
-    </p>
-  <button>Contact Us</button>
+
+    <!-- Section heading and content -->
+    <h2>Other content</h2>
+    <p class="bodytext"> "Show content here"</p>
+
+    <!-- Button for contact -->
+    <div style="text-align:center;">
+      <button>Contact Us</button>
+    </div>
+  </div>
 </body>
 </html>
