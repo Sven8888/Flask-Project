@@ -61,7 +61,7 @@ def homepage():
 
 @app.route("/data")
 def list_data():
-  return jsonify(DATA)
+  return render_template('home.html', site_data=DATA)
 
 
 if __name__ == "__main__":

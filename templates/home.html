@@ -19,18 +19,28 @@
   </style>
 </head>
 <body>
+ 
   <!-- Main container for the content -->
   <div class="container">
+     {% include 'nav.html' %}
     <!-- Title of the webpage -->
-    <h1 class="text-center mb-4 mt-4">Site Information</h1>
+    <h1 class="text-center mb-4 mt-5">
+      Site Information
+    </h1>
 
     <!-- Banner image -->
     <img id="banner" class="img-fluid" src="/static/images/tree.jpg" height="400">
 
     <!-- Section heading and content: About this webpage -->
     <h2 class="text-center mb-4 mt-4">About this webpage</h2>
+    <div class="row" style="margin-bottom:16px";>
+      <div class="col-md-6">
     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+        </div>
+      <div class="col-md-6">
+      <img src="/static/images/bird_house.jpg" style="height:300px; border-radius:4px;">
+         </div>
+      </div>
     <!-- Section heading and content: Our locations -->
     <h2 class="text-center mb-4 mt-4">Our locations</h2>
     <p class="lead">Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Sit amet venenatis urna cursus eget nunc scelerisque viverra. Diam phasellus vestibulum lorem sed risus ultricies tristique. Aliquam malesuada bibendum arcu vitae elementum curabitur.</p>
@@ -47,6 +57,7 @@
       <button type="button" class="btn btn-secondary btn-lg mb-4">Contact Us</button>
     </div>
   </div>
+  {% include 'footer.html' %}
 </body>
 </html>
 
